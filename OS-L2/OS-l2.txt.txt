@@ -1,0 +1,150 @@
+Microsoft Windows [Version 10.0.26100.4946]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\quintin>cd downloads
+
+C:\Users\quintin\Downloads>md OS-L2
+
+C:\Users\quintin\Downloads>cd OS-L2
+
+C:\Users\quintin\Downloads\OS-L2>md "Samsung" "Apple" "Sony"
+
+C:\Users\quintin\Downloads\OS-L2>echo a> "Samsung Book.pdf"
+
+C:\Users\quintin\Downloads\OS-L2>echo b> "Apple Macbook Air.txt"
+
+C:\Users\quintin\Downloads\OS-L2>echo c> "Sony Alpha.docx"
+
+C:\Users\quintin\Downloads\OS-L2>echo a> User_1.txt
+
+C:\Users\quintin\Downloads\OS-L2>notepad User_1.txt
+
+C:\Users\quintin\Downloads\OS-L2>xcopy User_1.txt User_2.txt
+Does User_2.txt specify a file name
+or directory name on the target
+(F = file, D = directory)? F
+C:User_1.txt
+1 File(s) copied
+
+C:\Users\quintin\Downloads\OS-L2>xcopy User_1.txt User_3.txt
+Does User_3.txt specify a file name
+or directory name on the target
+(F = file, D = directory)? F
+C:User_1.txt
+1 File(s) copied
+
+C:\Users\quintin\Downloads\OS-L2>xcopy User_1.txt User_4.txt
+Does User_4.txt specify a file name
+or directory name on the target
+(F = file, D = directory)? F
+C:User_1.txt
+1 File(s) copied
+
+C:\Users\quintin\Downloads\OS-L2>notepad User_2.txt
+
+C:\Users\quintin\Downloads\OS-L2>notepad User_3.txt
+
+C:\Users\quintin\Downloads\OS-L2>notepad User_4.txt
+
+C:\Users\quintin\Downloads\OS-L2>move User_1.txt Samsung
+        1 file(s) moved.
+
+C:\Users\quintin\Downloads\OS-L2>move User_2.txt Apple
+        1 file(s) moved.
+
+C:\Users\quintin\Downloads\OS-L2>move User_3.txt Sony
+        1 file(s) moved.
+
+C:\Users\quintin\Downloads\OS-L2>md Samsung\Users Samsung\"Brand Specs" Apple\Users Apple\"Brand Specs" Sony\Users Sony\"Brand Specs"
+
+C:\Users\quintin\Downloads\OS-L2>move "Samsung Book.pdf" Samsung\"Brand Specs" && move "Apple MacBook Air.txt" Apple\"Brand Specs" && move "Sony alpha.docx" Sony\"Brand Specs"
+        1 file(s) moved.
+        1 file(s) moved.
+        1 file(s) moved.
+
+C:\Users\quintin\Downloads\OS-L2>cd..
+
+C:\Users\quintin\Downloads>cd OS-L2
+
+C:\Users\quintin\Downloads\OS-L2>dir s*
+ Volume in drive C is Acer
+ Volume Serial Number is 92E7-1E48
+
+ Directory of C:\Users\quintin\Downloads\OS-L2
+
+09/09/2025  06:46 pm    <DIR>          Samsung
+09/09/2025  06:46 pm    <DIR>          Sony
+               0 File(s)              0 bytes
+               2 Dir(s)  349,249,421,312 bytes free
+
+C:\Users\quintin\Downloads\OS-L2>ir /s *.txt
+'ir' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\quintin\Downloads\OS-L2>dir /s *.txt
+ Volume in drive C is Acer
+ Volume Serial Number is 92E7-1E48
+
+ Directory of C:\Users\quintin\Downloads\OS-L2
+
+09/09/2025  06:14 pm                 3 User_4.txt
+               1 File(s)              3 bytes
+
+ Directory of C:\Users\quintin\Downloads\OS-L2\Apple
+
+09/09/2025  06:14 pm                 3 User_2.txt
+               1 File(s)              3 bytes
+
+ Directory of C:\Users\quintin\Downloads\OS-L2\Apple\Brand Specs
+
+09/09/2025  06:12 pm                 3 Apple Macbook Air.txt
+               1 File(s)              3 bytes
+
+ Directory of C:\Users\quintin\Downloads\OS-L2\Samsung
+
+09/09/2025  06:14 pm                 3 User_1.txt
+               1 File(s)              3 bytes
+
+ Directory of C:\Users\quintin\Downloads\OS-L2\Sony
+
+09/09/2025  06:14 pm                 3 User_3.txt
+               1 File(s)              3 bytes
+
+     Total Files Listed:
+               5 File(s)             15 bytes
+               0 Dir(s)  349,246,992,384 bytes free
+
+C:\Users\quintin\Downloads\OS-L2>IF EXIST Samsung.pdf (echo "Deleting Now Bhie" && DEL Samsung.pdf) ELSE (md Samsung\"Fold 7" && echo Samsung Galaxy Fold 7> Samsung\"Fold 7"\Samsung.pdf)
+
+C:\Users\quintin\Downloads\OS-L2>tree /f
+Folder PATH listing for volume Acer
+Volume serial number is 92E7-1E48
+C:.
+│   User_4.txt
+│
+├───Apple
+│   │   User_2.txt
+│   │
+│   ├───Brand Specs
+│   │       Apple Macbook Air.txt
+│   │
+│   └───Users
+├───Samsung
+│   │   User_1.txt
+│   │
+│   ├───Brand Specs
+│   │       Samsung Book.pdf
+│   │
+│   ├───Fold 7
+│   │       Samsung.pdf
+│   │
+│   └───Users
+└───Sony
+    │   User_3.txt
+    │
+    ├───Brand Specs
+    │       Sony Alpha.docx
+    │
+    └───Users
+
+C:\Users\quintin\Downloads\OS-L2>
